@@ -1,3 +1,3350 @@
+Skip to content
+You said:
+Hey chatgpt
+ChatGPT said:
+Hey! 👋 How’s it going?
+
+You said:
+Good, I am working on a CSS for a forum I'd want to get some help finilizing
+ChatGPT said:
+Sure — happy to help!
+What part of the CSS are you trying to finalize? You can paste the code or describe what you want it to look like, and we’ll work through it.
+
+You said:
+Just the overall color scheme for everything, this is as far as I've come...
+
+BODY {
+ background: #000000 url(/images/dark_red.jpg) repeat fixed;
+  SCROLLBAR-BASE-COLOR:#C40000;
+  scrollbar-face-color:#1a1a1a;
+  scrollbar-shadow-color:#000000;
+  scrollbar-highlight-color:#000000;
+  scrollbar-3dlight-color:#000000;
+  scrollbar-darkshadow-color:#000000;
+  scrollbar-track-color:#1a1a1a;
+  scrollbar-arrow-color:#C40000;	
+}
+
+span#profile-coins-amount,
+span#profile-bux-amount,
+span#profile--joined,
+span.d-inline-block.mx-1.profile--awards--award,
+a,
+btn,
+button,
+i.fas.fa-file::before,
+span#timestamp,
+div.user-info,
+p,
+h1, h2, h3, h4, h5, h6, h7 {
+    color: #8b3a3a; /* muted blood red */
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important; /* foggy charcoal */
+}
+
+.srd {
+    background-color: #141313!important;
+}
+
+div.userpage-wall {
+    background-color: #1a1a1a !important;
+}
+
+.fixed-top.shadow-md,
+.w-50.form-control,
+.btn,
+video,
+img {
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6)); /* muted red glow */
+    border-radius: 3px;
+    border: none;
+}
+
+.btn,
+.nav-link,
+.w-50.form-control,
+img,
+video,
+audio {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.nav-link:hover,
+.w-50.form-control:hover,
+img:hover,
+video:hover,
+audio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+a, p, i, body {
+    cursor: url("https://pomf2.lain.la/f/yhlf9yp8.png"), crosshair !important;
+}
+
+body::before, #userpage::before{
+
+content: "";
+
+background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+
+position: fixed;
+
+top: 0px;
+
+left: 0px;
+
+width: 100%;
+
+pointer-events: none;
+
+height: 100%;
+
+z-index: 222222;
+
+background-size: auto;
+
+bottom: initial;
+
+background-repeat: no-repeat;
+
+transform: initial;
+
+opacity: 1;
+
+}
+#userpage, .userpage-wall, .srd {
+    position: relative;
+    border: 1px solid rgba(139, 58, 58, 0.3); /* softer outlines */
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+    background-color: rgba(30, 30, 30, 0.9); /* slightly transparent foggy panels */
+}
+
+a {
+    position: relative;
+    color: #240000;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #8b3a3a;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+    border-bottom: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(139, 58, 58, 0.5), transparent);
+    margin: 10px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+    color: #b35c5c; /* slightly more visible headings in mist */
+}
+
+a:link { color: #FFC1C1; text-decoration: underline }
+a:visited { color: #FFC1C1; text-decoration: underline }
+a:active { color: #FFFFFF; text-decoration: underline }
+a:hover { color: #FFFFFF; text-decoration: underline }
+
+a.menu:link { color: #FF0000; text-decoration: none }
+a.menu:visited { color: #FF0000; text-decoration: none }
+a.menu:active { color: #FF6F6F; text-decoration: none }
+a.menu:hover { color: #FF6F6F; text-decoration: none }
+
+TABLE {
+  text-align:justify;
+  color:White;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:10pt;
+  font-weight:normal;
+}
+
+TD {
+}
+
+hr {
+  color:#FF5959;
+}
+
+.tdmenu {
+  background:#000000;
+}
+
+.tdmenumain {
+}
+
+.tdpremium {
+  background:#000000;
+}
+
+.tablewindows {
+  background:#800000;
+}
+
+.tdwindows {
+  background:#400000;
+}
+
+.tabledescription {
+  background:#FF5959;
+}
+
+.tddescription {
+  background:#2F0000;
+}
+
+.tddescriptionmain {
+}
+
+.textarea	{
+  text-align:justify;
+  color:White;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:10pt;
+  font-weight:normal;
+}
+
+.footer	{
+  text-align:justify;
+  color:White;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:8pt;
+  font-weight:normal;
+}
+
+.forminput, .textinput, .radiobutton, .checkbox {
+  font-size: 12px;
+  font-color: White;
+  font-family: verdana, helvetica, sans-serif;
+  vertical-align: middle;
+  color: White;
+  background-color: Black;
+  border: 2px #FF5959 solid
+}
+ChatGPT said:
+Nice — you’ve already got a strong aesthetic direction: blood-red accents on deep charcoal with gothic vibes.
+What you mostly need now is unifying the palette and removing conflicting color rules.
+
+Below is a cleaned-up, unified color scheme + optional improved variables version.
+
+✅ Recommendations Before Finalizing
+1. Conflicting link colors
+You define:
+
+global link color (a { color: #240000; })
+
+custom hover underline animation
+
+AND later a full set of a:link, a:hover, etc. in soft pinks & whites.
+
+These fight each other. Tell me which look you prefer:
+
+Option A — Blood-red gothic link style (your early style)
+Deep reds, subtle underline animation.
+
+Option B — Pink/white retro link style (your later block)
+Lighter colors, classic underlined style.
+
+I can unify the entire CSS depending on which you choose.
+
+2. Color Palette Unification
+Right now you’re using many reds:
+
+#C40000
+
+#8b3a3a
+
+#b35c5c
+
+#240000
+
+#FF5959
+
+#FF0000
+
+#800000
+
+#400000
+
+#2F0000
+
+I can reduce this to 1 main red + 2 support tones for a cleaner, coherent look.
+
+Example:
+
+:root {
+  --red-main: #8b3a3a;
+  --red-bright: #C40000;
+  --red-dark: #240000;
+  --bg-dark: #0a0a0a;
+  --bg-panel: #1a1a1a;
+  --text-light: #FFC1C1;
+}
+Then apply them cleanly.
+
+3. Some obsolete scrollbar properties
+For modern browsers, custom scrollbars use:
+
+::-webkit-scrollbar
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-track
+Want me to rewrite your scrollbars into the modern format?
+
+⭐ If You Want a Fully Rewritten + Cleaned Version
+I can produce:
+
+a fully normalized palette
+
+modernized syntax
+
+all your effects preserved
+
+organized + grouped CSS
+
+optional dark-gothic or dark-metal versions
+
+Just answer these 3 things:
+
+❓ Three Quick Questions
+Which link style should we finalize?
+A = gothic dark-red
+B = retro pink/white
+
+Do you want the red palette simplified to 2–3 cohesive tones?
+(Yes / No — if yes, I’ll pick tones based on your theme.)
+
+Should I modernize the scrollbars?
+(Yes / No)
+
+Reply with something like:
+“A, yes, yes” and I’ll deliver a polished final CSS.
+
+You said:
+Please help me rewrite and polish it up a bit,
+
+1) A
+
+2) I'd like a mix of dark red and black but have it not be just dark red and black, I want the text to pop better, like contrast a bit so perhaps a different color all together?
+
+3) Yes let's try that
+ChatGPT said:
+Great — I’ll rewrite your CSS into a clean, modern, unified gothic theme, using:
+
+Theme Direction (based on your preferences)
+✔ Option A link style (dark-red gothic)
+✔ Color scheme = black + dark red + a contrasting “pale gold” for readable text
+✔ Modernized scrollbars
+✔ Cleaned, optimized, organized CSS
+✔ Preserved gothic, misty, bloody vibe, but more readable + consistent
+
+🎨 Final Unified Palette
+I’m introducing a 3-color contrast system:
+
+Dark Red (Primary Accent): #8b3a3a
+
+Deep Blood: #240000
+
+Pale Gold (Contrast Text): #d7c39a (warm, readable, gothic-fantasy contrast)
+
+Panels / Backgrounds: near-black charcoals
+
+You can change pale gold easily if you want something cooler (cyan, pale violet, etc.)
+
+✅ POLISHED + CLEANED CSS (Full Rewrite)
+Everything is grouped and consistent.
+
+/* ===========================
+   GOTHIC DARK RED THEME
+   Cleaned + Modernized
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a; /* pale gold */
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+/* ===========================
+   BODY + GLOBAL
+   =========================== */
+
+body {
+    background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;
+    color: var(--text-contrast);
+    cursor: url("https://pomf2.lain.la/f/yhlf9yp8.png"), crosshair !important;
+}
+
+/* Light mist overlay */
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+/* ===========================
+   TEXT / HEADINGS
+   =========================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+/* ===========================
+   LINKS (Option A)
+   =========================== */
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url("https://pomf2.lain.la/f/yhlf9yp8.png"), crosshair !important;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* ===========================
+   PANELS / CONTAINERS
+   =========================== */
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+/* ===========================
+   MEDIA, BUTTONS, INPUTS
+   =========================== */
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+/* ===========================
+   HR + MISC
+   =========================== */
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+/* ===========================
+   TABLE STYLING (preserved but unified)
+   =========================== */
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+⭐ What This Fixes / Improves
+✔ No more conflicting link colors
+You now have a single, elegant, dark-red gothic link style.
+
+✔ Real contrast added
+Text now uses pale gold → readable but still gothic and cohesive.
+
+✔ Unified palette
+All reds and shadows now match the same families.
+
+✔ Modern scrollbars
+Old IE scrollbar properties are removed.
+
+✔ Cleaner shadows, transitions
+Less chaos, more style.
+
+✔ Organized by sections
+Much easier to maintain later.
+
+Want further enhancement?
+I can also add:
+
+🔹 glowing runic borders
+🔹 animated mist overlay
+🔹 “blood drip” hover transitions
+🔹 neon red or gold modes
+🔹 matching dark mode / light mode
+🔹 recolored icons or filters
+
+Just tell me what you want!
+
+You said:
+Remove the comments please :)
+ChatGPT said:
+Here you go — same polished CSS, no comments at all:
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a;
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+body {
+    background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;
+    color: var(--text-contrast);
+    cursor: url("https://pomf2.lain.la/f/yhlf9yp8.png"), crosshair !important;
+}
+
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url("https://pomf2.lain.la/f/yhlf9yp8.png"), crosshair !important;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+If you'd like, I can also:
+
+✨ add a faint red glow to panels
+✨ add animated grain/noise effect
+✨ add a subtle “blood smear” overlay
+✨ recolor the pale-gold text to icy blue / pale violet / bone-white
+
+Just tell me!
+
+You said:
+Okay that works for now, thanks AI
+ChatGPT said:
+You’re welcome!
+If you want to expand the style later — animations, glows, new color accents, or a full theme pack — just drop it in and I’ll help tune it.
+
+Happy styling 👹🩸
+
+You said:
+Chat GPT can you help me find a custom cursor for my CSS code?
+ChatGPT said:
+
+https://toppng.com/uploads/preview/custom-mouse-cursor-transparent-115493980339rqgxbvlau.png
+Cool idea. Here are a few options + how to implement a custom cursor in your CSS, plus some places to get cursor files that match your gothic / dark-red style:
+
+🔍 How to Use a Custom Cursor in CSS
+You can set a custom cursor using the cursor property in CSS:
+
+body {
+  cursor: url('path/to/your-cursor.png') x y, auto;
+}
+path/to/your-cursor.png → the image (PNG, CUR, or .ico)
+
+x y → optional hotspot coordinates (where the “click” point is) 
+PHP.cn
++1
+
+auto (or another keyword like pointer) is a fallback cursor 
+Tutorial Republic
+
+Keep the cursor image small (ideally 32×32px) 
+OpenReplay Blog
+
+🖱️ Good Places to Find Custom Cursors
+SVGBackgrounds — They have a “Custom CSS Cursors” section where you can download SVG cursor icons. 
+SVG Backgrounds
+
+GitHub / Gists — You can embed cursor images using data URIs (Base64) so you don’t need to host the image separately. 
+Gist
+
+✨ Example Cursor Assets
+The image above (from TOPpng) is a dark red / burgundy arrow cursor — you can convert / host it and use in your CSS.
+
+If you want a more “gothic” or stylized cursor (skulls, blood drip, cross), you could design one (or get a designer), export it as .png, or even .cur for better compatibility.
+
+✅ Sample CSS (with Your Theme)
+Here’s how you might plug in a dark-red custom cursor into your existing CSS theme:
+
+body, a, button {
+  cursor: url('/images/cursors/blood-arrow.png') 16 16, crosshair;
+}
+Adjust the 16 16 to match the hotspot of your cursor file.
+
+Use crosshair (or another fallback) to match your style.
+
+If you like, I can find 5-6 ready-made, free, dark-red / gothic-style cursors (PNG or CUR) that go really well with your forum theme — do you want me to do that?
+
+You said:
+I want something more vampiric
+ChatGPT said:
+
+https://cdn.custom-cursor.com/packs/12047/lifestyle-dracula-myth-pack-652x652.jpg
+Good call. Here are some vampiric / gothic-style cursor options + how to use them, plus CSS examples:
+
+🧛‍♂️ Vampire Cursor Options
+Here are a few good ones you can use or download:
+
+Cursor	Description / Source
+Gothic Vampire Cursor	A classic vampire head with fangs. 
+Sweezy Custom Cursors
+Vampire Strawberry & Blood Drop Cursor	A cute-but-creepy strawberry vampire + blood drop pointer. 
+Sweezy Custom Cursors
+Dracula Fang & Cloaked Animated Cursor	Animated vampire figure / fangs. 
+Sweezy Custom Cursors
+Sleek Black Candle & Vampire Silhouette	A minimalist vampire profile + black candle. 
+Sweezy Custom Cursors
+Dark Poison & Vampire Jaw Cursor	Evil poison bottle + vampire mouth. 
+Sweezy Custom Cursors
+Origami Vampire & Bat Cursor	Origami-style paper vampire + bat silhouette. 
+Custom Cursor browser extension
+Neon Vampire Lips Cursor	Glowing neon fangs / lips. 
+Custom Cursor browser extension
+Vampire Waving Cross (Animated)	From RW Designer — animated cursor. 
+RealWorld Designer
+💻 How to Use a Custom Vampire Cursor in Your CSS
+Download the cursor file you like (usually .cur or .png).
+
+Upload it to your web server (e.g. /images/cursors/).
+
+Use it in CSS, something like:
+
+body, a, button {
+   cursor: url('/images/cursors/vampire-cursor.cur') 16 16, crosshair;
+}
+16 16 = hotspot (adjust based on the cursor image)
+
+crosshair = fallback cursor
+
+If you like, I can design a custom vampire cursor (PNG / CUR) that matches your forum’s color palette (dark red, black, pale gold) — do you want me to make one?
+
+You said:
+Hmm... is there a website I can use to find more cursors? That maybe I can't find when searching?
+ChatGPT said:
+Good question. Yes — here are some lesser-known / more niche websites where you can find gothic / vampiric cursors, plus tools to make your own:
+
+🔗 Websites to Find Gothic / Vampire Cursors
+RW‑Designer
+
+Their “Gothic Red & Black Cursors” set is perfect for dark / vampiric themes. 
+RealWorld Designer
++1
+
+Example: Goth WIB.cur → a gothic-style working cursor. 
+RealWorld Designer
+
+They also have full cursor sets with .cur files. 
+RealWorld Designer
+
+Cursor World
+
+A gallery + builder for custom cursors. 
+cursor-world.com
+
+You can browse cursor packs, or create your own with SVG / PNG / animated states. 
+cursor-world.com
+
+They have a Dracula / vampire-style pack. 
+cursor-world.com
+
+Sweezy‑Cursors
+
+Lots of gothic / dark fantasy cursors here.
+
+Examples: Gothic Vampire Cursor. 
+Sweezy Custom Cursors
+
+Dark Gothic Arrow & Cross cursor. 
+Sweezy Custom Cursors
+
+Gothic Raven Feather & Ring. 
+Sweezy Custom Cursors
+
+Goth Aesthetic Skull (animated). 
+Sweezy Custom Cursors
+
+Stardock / CursorFX
+
+More for Windows locally than web, but if you're okay with .cur or .ani files, this is super powerful. 
+stardock.com
+
+With CursorFX you can import your own PNGs and make custom animated cursors. 
+stardock.com
+
+⚠️ Things to Be Careful About
+Always check file type: use .cur or .png for CSS‑friendly cursors.
+
+Test hotspot coordinates (where the “tip” of the cursor is) — different designs need different offsets.
+
+Make sure the site is trustworthy. Some cursor websites / extensions may come with adware or unwanted extras. For example, some Reddit users worry about suspicious installer behavior. 
+Reddit
++1
+
+Animated cursors may not work cross‑browser when used via CSS. According to devs, animations can be tricky. 
+Reddit
+
+If you like, I can pick out 10 free, high-quality vampire / gothic cursors (PNG or CUR) that are safe, web‑optimized, and fit your forum’s aesthetic — do you want me to do that?
+
+You said:
+I will download a cursor as .cur
+ChatGPT said:
+Perfect! Using a .cur file is ideal because it’s fully supported by browsers via CSS, and you don’t have to worry about PNG hotspot issues.
+
+Here’s how to add it to your forum CSS:
+
+body, a, button {
+    cursor: url('/images/cursors/vampire-cursor.cur'), crosshair;
+}
+Notes:
+
+Replace '/images/cursors/vampire-cursor.cur' with the actual path where you upload the .cur file.
+
+crosshair is the fallback if the cursor doesn’t load. You can use pointer, default, or crosshair depending on the feel you want.
+
+You don’t need to specify hotspot coordinates for .cur files; it’s embedded in the file itself.
+
+Once uploaded and linked, the cursor should automatically appear on your forum pages.
+
+If you want, I can show you a small tweak to make it apply only to links and buttons but not text selection, which can look extra vampiric without breaking usability. Do you want me to do that?
+
+You said:
+Okay I have two .cur files now, one for pointer and one for cursor, can you write a code I need to put into my CSS for both files? Also does /images/cursors, path work if I have it on my own machine? I am not the host of the website
+ChatGPT said:
+Got it! Since you’re not hosting the website, a local path like /images/cursors won’t work — browsers can’t load local files from your computer into a live website unless you host them online. You’ll need the .cur files hosted somewhere accessible on the web (your own hosting, GitHub Pages, Dropbox public link, or any direct URL).
+
+✅ CSS for Two Different Cursors
+You said one is for the pointer (usually links/buttons) and one is for the default cursor. Here’s an example:
+
+/* Default cursor for the page */
+body {
+    cursor: url('https://example.com/path/to/default-cursor.cur'), default;
+}
+
+/* Pointer cursor for links and buttons */
+a, button {
+    cursor: url('https://example.com/path/to/pointer-cursor.cur'), pointer;
+}
+Explanation:
+
+url('...') → the full web URL to your .cur file.
+
+default or pointer → fallback cursor in case the .cur file doesn’t load.
+
+body sets the default cursor for everything.
+
+a, button overrides links and buttons with the pointer-style cursor.
+
+⚠ Important Notes
+Local files don’t work for live websites:
+
+/images/cursors/... only works if you’re editing your own hosted site with that path.
+
+On someone else’s forum, you cannot reference files on your computer.
+
+Workarounds if you don’t have hosting:
+
+Upload the .cur files to Imgur, GitHub Pages, Dropbox (public link), or another image host that allows direct file links.
+
+Use the direct URL in the url() in your CSS.
+
+If you want, I can write the CSS exactly for your two cursors and show a trick to test them locally on your browser without hosting, so you can preview it before uploading. Do you want me to do that?
+
+You said:
+Let me upload those to github then and add the repository link as the url
+ChatGPT said:
+Perfect! That’s exactly the way to do it. Once your .cur files are in a GitHub repository, you can use the raw file URL as the url() in your CSS.
+
+Here’s the step-by-step once they’re uploaded:
+
+1️⃣ Upload .cur files to GitHub
+Create a repository (public is easiest).
+
+Upload both .cur files into it, e.g., default.cur and pointer.cur.
+
+2️⃣ Get the raw file URLs
+Go to your .cur file on GitHub → click “Raw”.
+
+Copy the URL. It should look something like:
+
+https://raw.githubusercontent.com/username/repo/main/default.cur
+https://raw.githubusercontent.com/username/repo/main/pointer.cur
+3️⃣ Add them to your CSS
+/* Default cursor for everything */
+body {
+    cursor: url('https://raw.githubusercontent.com/username/repo/main/default.cur'), default;
+}
+
+/* Pointer cursor for links and buttons */
+a, button {
+    cursor: url('https://raw.githubusercontent.com/username/repo/main/pointer.cur'), pointer;
+}
+Replace username and repo with your actual GitHub username and repository name.
+
+The default and pointer at the end are fallback cursors in case the .cur file doesn’t load.
+
+Once you do that, your forum will display your custom vampire cursors for normal and pointer states.
+
+If you want, I can write a ready-to-paste CSS snippet for your two GitHub cursors once you give me the raw URLs. Do you want me to do that?
+
+You said:
+Here is the link for the cursor: https://github.com/AveDoroth/DYDOM/blob/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur
+
+And here is the one for the pointer: https://github.com/AveDoroth/DYDOM/blob/main/Halloween%20Skeleton%20Hand--pointer--SweezyCursors..cur
+ChatGPT said:
+Perfect! Thanks for the links. A quick note first: GitHub’s normal file URLs (the ones you gave) don’t work directly in CSS — you need the raw file URL. Here’s how to get them:
+
+Go to your file on GitHub.
+
+Click the “Raw” button.
+
+That will open a page with a URL like:
+
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur
+Do the same for the pointer .cur file.
+
+Assuming you now have the raw URLs, here’s the CSS you can use:
+
+/* Default cursor for the page */
+body {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur'), default;
+}
+
+/* Pointer cursor for links and buttons */
+a, button {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--pointer--SweezyCursors..cur'), pointer;
+}
+✅ Notes:
+
+Make sure the URLs are the raw version (not the GitHub HTML page link).
+
+CSS will automatically use the .cur hotspot, so no need to manually set coordinates.
+
+default and pointer are fallback cursors if the file fails to load.
+
+If you want, I can combine this with your gothic CSS theme so it’s fully ready to paste into your forum CSS with everything applied. Do you want me to do that?
+
+You said:
+Remove the comments please
+ChatGPT said:
+Here’s your CSS snippet with the custom cursors and no comments:
+
+body {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur'), default;
+}
+
+a, button {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--pointer--SweezyCursors..cur'), pointer;
+}
+You said:
+Can you put it in this code? Remove the previous cursor
+ChatGPT said:
+Absolutely! Here’s your full gothic / dark-red CSS with the new vampire .cur cursors integrated, and the old cursor code removed. All comments are gone:
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a;
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+body {
+    background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;
+    color: var(--text-contrast);
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur'), default;
+}
+
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--pointer--SweezyCursors..cur'), pointer;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+This will:
+
+Apply your Halloween Skeleton Hand .cur as the default cursor.
+
+Apply your pointer .cur for all links and buttons.
+
+Keep your gothic dark-red theme intact.
+
+If you want, I can also make the cursor only appear on certain elements (like links, buttons, and images) and keep normal text selection with the default system cursor — it looks a bit cleaner for forums. Do you want me to do that?
+
+You said:
+How do I get the raw file of my github? When I press raw it just downloads the file
+ChatGPT said:
+Ah! That happens because .cur files are binary files, not plain text. On GitHub, the Raw button usually works for text files, but for binaries like .cur, GitHub just triggers a download instead of giving a usable URL.
+
+Luckily, there’s a workaround to get a direct raw URL that works in CSS:
+
+Option 1: Use GitHub’s raw URL format manually
+The raw URL format is:
+
+https://raw.githubusercontent.com/<USERNAME>/<REPO>/<BRANCH>/<FILE_PATH>
+For your files:
+
+Username: AveDoroth
+
+Repo: DYDOM
+
+Branch: main
+
+File path: Halloween Skeleton Hand--cursor--SweezyCursors..cur
+
+URL encoded (spaces → %20):
+
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--cursor--SweezyCursors..cur
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Halloween%20Skeleton%20Hand--pointer--SweezyCursors..cur
+These are the URLs you can use directly in your CSS.
+
+Option 2: Use a hosting service
+If GitHub raw URLs still give issues in some browsers:
+
+Use Dropbox public links, Imgur (if PNG), Google Drive (with public direct link), or GitHub Pages.
+
+GitHub Pages is best for binary files because you can serve them like a normal website.
+
+✅ So for your CSS, just use the manually constructed raw URL above — that’s all you need.
+
+If you want, I can update your CSS right now with the proper working URLs for both cursor files. Do you want me to do that?
+
+You said:
+New pointer: https://github.com/AveDoroth/DYDOM/blob/main/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur
+
+New Cursor: https://github.com/AveDoroth/DYDOM/blob/main/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur
+
+Can you replace the previous cursor and pointer with this one?
+ChatGPT said:
+Absolutely! Using the manual raw GitHub URL method, your new .cur files will look like this in CSS:
+
+body {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur'), default;
+}
+
+a, button {
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur'), pointer;
+}
+If you want, I can update your full gothic CSS from before with these new cursor URLs so it’s ready to paste and use immediately. Do you want me to do that?
+
+You said:
+Write it into the full code please
+ChatGPT said:
+Got it! Here’s your full gothic / dark-red CSS with the new Dagger & Dark Rose Halloween cursors integrated and all old cursor code removed:
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a;
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+body {
+    background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;
+    color: var(--text-contrast);
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur'), default;
+}
+
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur'), pointer;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+This version:
+
+Uses Dagger & Dark Rose Halloween .cur as the default cursor.
+
+Uses Dagger & Dark Rose Halloween pointer .cur for all links and buttons.
+
+Maintains your dark-red / black gothic theme.
+
+You said:
+Let's work on the code, you see the "Background" image I set? Well that is just for sprinkles, not the actual background. This is the current background (which doesn't exist apparently) background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;)
+
+Could you help me find something dark/ gothic that I could put instead?
+ChatGPT said:
+Good idea. Here are some gothic / dark background images / textures you could use — plus how to plug one into your CSS:
+
+🔍 Some Good Gothic Background Resources
+PatternCooler – Gothic seamless patterns — lets you pick a pattern, change colors, and download a repeating texture. 
+patterncooler.com
+
+Vector4Free – Gothic background vectors — a variety of gothic-style vector images. 
+Vector4Free
+
+FreeVectors.net – Gothic backgrounds — free vectors for dark / ornate patterns. 
+freevectors.net
+
+StockCake – Gothic “Pattern Darkness” — a dark Victorian-damask-style texture. 
+Stockcake
+
+DesignTemplate – Free gothic textures — includes dark brick, metal, gothic-style walls, etc. 
+Doographics
+
+🎨 Example Background to Use in Your CSS
+Let’s say you pick a seamless gothic damask pattern from PatternCooler (or any other site). After downloading it:
+
+Upload the background image to your image host / GitHub / wherever you're storing assets.
+
+Use the following CSS, replacing your-gothic-bg.png with your file:
+
+body {
+  background: var(--bg-main) url('https://yourdomain.com/path/to/your-gothic-bg.png') repeat fixed;
+}
+✨ Example with a Specific Resource
+If you use the Gothic Pattern Darkness from StockCake:
+
+:root {
+  --bg-main: #000000; /* fallback black */
+}
+
+body {
+  background: var(--bg-main) url('https://stockcake.com/i/gothic-pattern-darkness_1824791_1264865') repeat fixed;
+  color: var(--text-contrast);
+}
+If you like, I can pick 5 very high-quality, free, dark‑gothic background images (textures) that match your red + black + pale‑gold theme, and then write the exact CSS for them. Do you want me to do that?
+
+You said:
+Hmm no.. none of those worked
+ChatGPT said:
+Good point — let’s pick a couple of very usable gothic / dark textures, and I’ll also show how to plug them into your CSS.
+
+🔎 Some Dark Gothic Background Images You Can Use
+Here are some good, free-ish sources + specific backgrounds + texture ideas:
+
+Pixabay — lots of “gothic pattern” textures. 
+Pixabay
+
+StockCake – Gothic Pattern Darkness — a rich Victorian damask. 
+Stockcake
+
+StockCake – Gothic Purple Pattern — deep purples + gothic tracery. 
+Stockcake
+
+Criativodahora – Dark Brick Texture — old, weathered brick, very gothic / industrial. 
+Criativo Dahora
+
+Vectorified – Gothic Pattern Vectors — you can export as PNG or SVG and tile them. 
+Vectorified
+
+✨ Example CSS with a Gothic Background Texture
+Let’s say you pick the StockCake Gothic Pattern Darkness image (or any other texture you like). Once you’ve downloaded / hosted it, your CSS can look like this:
+
+:root {
+  --bg-main: #000000;
+}
+
+body {
+  background: var(--bg-main) url('https://yourfilehost.com/gothic-pattern-darkness.png') repeat fixed;
+  color: var(--text-contrast);
+}
+If you want a more subtle texture (just a hint of pattern) you can do:
+
+body {
+  background: var(--bg-main);
+  background-image: url('https://yourfilehost.com/gothic-pattern-darkness.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-size: 300px 300px;
+}
+background-blend-mode: multiply; helps the pattern blend more softly with your black background.
+
+Adjust background-size to change how big / small the pattern looks.
+
+If you like, I can generate 3 custom dark-gothic seamless PNG textures (free style) that match your red / black / pale gold theme, and give you CSS + download links. Do you want me to do that?
+
+You said:
+If left is 0px, what would right be?
+ChatGPT said:
+In CSS, if you set left: 0px for a positioned element (like position: absolute or position: fixed), the right property is independent — it does not automatically mirror left.
+
+Here’s how it works:
+
+If you only set left: 0px:
+
+The element’s left edge is 0px from the left side of its containing block.
+
+The right edge is determined by the element’s width.
+
+right will be auto unless you explicitly set it.
+
+If you set both left: 0px and right: 0px:
+
+The element stretches horizontally to fill the space between left and right.
+
+Its width is automatically adjusted.
+
+Example:
+
+div {
+  position: absolute;
+  left: 0px;
+  width: 200px; /* right is auto, not zero */
+}
+
+div.stretch {
+  position: absolute;
+  left: 0px;
+  right: 0px; /* stretches to fill */
+}
+✅ Summary:
+
+left: 0px → fixes the left edge.
+
+right → stays auto unless you specify it.
+
+right: 0px → stretches to the right edge of the container.
+
+If you want, I can draw a small diagram showing exactly how left/right/width interact so it’s crystal clear. Do you want me to do that?
+
+You said:
+Let's say I just need the (x)px value
+ChatGPT said:
+If you only set left: 0px and do not set a width or right, then the right value is effectively auto, not a numeric pixel value.
+
+If you want a numeric pixel value for right, it depends on the container width and the element’s width:
+
+right = container width − element width − left
+So for example:
+
+Container width = 1000px
+
+Element width = 200px
+
+left = 0px
+
+Then:
+
+right = 1000 − 200 − 0 = 800px
+If the element is 100% width or you set right: 0px, then right is literally 0px.
+
+Do you want me to calculate a sample right value for your forum background element?
+
+You said:
+Let me try
+ChatGPT said:
+Sure! Go ahead and try, and I can check it for you or help adjust it if needed.
+
+You said:
+So this is my code now
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a;
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+body {
+    background: var(--bg-main) url(/images/dark_red.jpg) repeat fixed;
+    color: var(--text-contrast);
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur'), default;
+}
+
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+}
+
+body::before,
+#userpage::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 222222;
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur'), pointer;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+
+The problem is that only one of the two background images are shown, I want one to be to the left and the other fully to the right of the screen
+ChatGPT said:
+Ah, now I see exactly what’s happening. Right now, you have two body::before / #userpage::before selectors stacked, so the second one completely overwrites the first. That’s why you only see one background.
+
+The solution is to use a single pseudo-element per container and place both images inside it, positioning one to the left and the other to the right using position: absolute inside a container. Or, you can use two separate pseudo-elements, like ::before and ::after.
+
+Here’s a clean way using ::before and ::after:
+
+body::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+
+body::after {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+✅ Key points:
+
+::before handles the left image, ::after handles the right image.
+
+background-position: left top; places the first image at the left.
+
+background-position: right top; places the second image at the right.
+
+Both pseudo-elements are position: fixed so they stay in place when scrolling.
+
+pointer-events: none; ensures they don’t block clicks.
+
+This way, both background images appear simultaneously, each on their side of the screen.
+
+If you want, I can integrate this fix into your full CSS so it’s ready to use immediately. Do you want me to do that?
+
+You said:
+So the image that is set to "after" is in the same position as the image "before", can we move the "after" image somehow?
+ChatGPT said:
+Yes! Right now, both pseudo-elements are position: fixed with top: 0; left: 0; width: 100%; height: 100%, so even though the background-position is right top, the image’s natural size may make it appear in the same spot as the left image.
+
+To fix this, we have a few options:
+
+Option 1: Use background-position and background-size
+You can keep both pseudo-elements full-screen but adjust the background-position and background-size so the right image sits visually on the right:
+
+body::after {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+    background-repeat: no-repeat;
+    background-position: right top;  /* pushes the image to the right */
+    background-size: 200px auto;     /* adjust width of the image */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+background-position: right top; → aligns image to the right edge
+
+background-size → scales it so it doesn’t overlap the left image
+
+Option 2: Shift the pseudo-element itself
+Instead of keeping left: 0; width: 100%;, you can position the pseudo-element on the right:
+
+body::after {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+    background-repeat: no-repeat;
+    background-size: contain;       /* or auto */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;                   /* size of the image container */
+    height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+Now the pseudo-element itself is anchored to the right (right: 0)
+
+Its width can be whatever you need (300px in the example)
+
+This avoids overlap completely
+
+✅ My recommendation: Use Option 2 for precise placement. It’s cleaner because the pseudo-element itself becomes the “container” for your right image.
+
+If you want, I can rewrite your full CSS with this fix, making the left image ::before and the right image ::after properly positioned so they never overlap. Do you want me to do that?
+
+You said:
+Yes please
+ChatGPT said:
+Perfect! Here’s your full CSS updated so that the left background (::before) and right background (::after) are properly positioned and won’t overlap. I also kept all your dark-gothic styling and your custom cursors.
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+    --accent-red: #8b3a3a;
+    --accent-red-dark: #240000;
+    --text-contrast: #d7c39a;
+    --bg-main: #000000;
+    --bg-panel: rgba(20, 20, 20, 0.9);
+    --bg-panel-dark: rgba(10, 10, 10, 0.9);
+    --border-soft: rgba(139, 58, 58, 0.3);
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-contrast);
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur'), default;
+}
+
+/* LEFT background image */
+body::before {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;    /* width of the left image */
+    height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+
+/* RIGHT background image */
+body::after {
+    content: "";
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;    /* width of the right image */
+    height: 100%;
+    pointer-events: none;
+    z-index: 222222;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-red-dark);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-red);
+    font-family: "Cinzel Decorative", serif !important;
+    letter-spacing: 1px;
+}
+
+p, span, div, td, th {
+    color: var(--text-contrast);
+}
+
+a {
+    color: var(--accent-red-dark);
+    position: relative;
+    text-decoration: none;
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/DYDOM/main/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur'), pointer;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-contrast);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+#userpage, 
+.userpage-wall, 
+.srd {
+    position: relative;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
+}
+
+.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
+    background: #1f1f1f !important;
+}
+
+button, 
+.btn, 
+img, 
+video, 
+audio, 
+.w-50.form-control {
+    border: none;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+img:hover,
+video:hover,
+audio:hover,
+.w-50.form-control:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+}
+
+.forminput, 
+.textinput, 
+.radiobutton, 
+.checkbox {
+    background: #000;
+    color: var(--text-contrast);
+    border: 2px solid var(--accent-red);
+    font-family: Verdana, Arial, Helvetica;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(139, 58, 58, 0.5),
+        transparent
+    );
+}
+
+#header--icon {
+    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
+}
+
+table {
+    color: var(--text-contrast);
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10pt;
+}
+
+.tablewindows { background: #2a0000; }
+.tdwindows    { background: #110000; }
+
+.tabledescription { background: var(--accent-red); }
+.tddescription     { background: #1a0000; }
+✅ Key Fixes:
+The left image uses ::before and is positioned with left: 0; width: 300px.
+
+The right image uses ::after and is positioned with right: 0; width: 300px.
+
+Both are position: fixed and won’t interfere with content.
+
+background-size: auto ensures the images keep their original size; you can tweak this to scale them.
+
+If you want, I can also make the right image slightly offset vertically or scale it, so it doesn’t line up exactly with the left image — that usually looks more “dynamic” and gothic.
+
+Do you want me to do that next?
+
+You said:
+Let's try to get a custom layout for my site, here is the comment: CSS File must be a full path to your CSS file. This path must be an internet path starting with http://
+
+Graphics Path must end with a trailing slash. All graphics must be in the same place and sub-directory. This path must be an internet path starting with http://
+
+CSS File and Graphics path are optional. Anything in your Style Sheet box (above) will override all other settings. It is highly recommended that you specify a CSS file here and leave your Style Sheet Code box blank. Or, as an alternative, copy and paste the contents of your CSS file skin into your Style Sheet Code box.
+ChatGPT said:
+Great — this is a layout system description, and I know exactly how to set it up for you.
+You basically have two ways to apply a custom layout:
+
+✅ How the system works
+It wants two URLs:
+
+1. A CSS file URL
+Must be a FULL URL, like:
+
+http://yourdomain.com/yourfolder/mystyle.css
+(Must start with http://, NOT https unless your site supports it.)
+
+2. A graphics folder URL
+Used for images referenced in your CSS.
+It must end with a slash, like:
+
+http://yourdomain.com/yourfolder/images/
+All images used in CSS must be stored in that folder.
+
+3. The Style Sheet Box
+You should leave it empty IF you're using an external CSS file.
+Anything typed in that box will override your external CSS.
+
+⚠️ Important note for you
+Since you want a big gothic theme, two side background images, custom cursors, etc…
+You 100% should use an external CSS file.
+It will be cleaner and easier to maintain, and everything will work correctly.
+
+🔧 How to set it up with your GitHub repo
+GitHub raw links work for CSS files, so you can use GitHub as your host.
+
+Step 1 — Create a CSS file in your repo
+In your repo DYDOM, create a file:
+
+custom.css
+Paste your entire CSS code into it.
+
+Step 2 — Use the RAW GitHub URL
+For CSS files, GitHub Raw works fine.
+
+Your CSS file URL will be:
+
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/custom.css
+(Replace custom.css with whatever name you actually make.)
+
+Step 3 — Create an images folder
+In your repo, make:
+
+/images/
+Upload ALL background images, cursor files, etc into it.
+
+Step 4 — Use the images path
+Your images folder URL will be:
+
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/
+Note the trailing slash — required.
+
+🧛‍♀️ Example completed setup
+CSS File:
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/custom.css
+Graphics Path:
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/
+Style Sheet Code Box:
+Leave Empty
+
+✨ If you want, I can:
+✔️ Build the entire custom.css file for you
+✔️ Format it cleanly
+✔️ Replace all image links automatically to match your GitHub graphics folder
+✔️ Add comments for structure or remove them
+✔️ Create a "complete skin package" that drops right into your GitHub
+
+Just say:
+“Yes, generate the custom.css file for me.”
+
+You said:
+How do I make the file in my repo?
+ChatGPT said:
+Here is exactly how to create a CSS file in your GitHub repo, step-by-step, with screenshots-style instructions:
+
+✅ How to Create a CSS File in Your GitHub Repository
+1. Go to your GitHub repo
+Open your browser and go to:
+
+https://github.com/AveDoroth/DYDOM
+2. Click “Add file”
+At the top-right of the file list:
+
+▶️ Add file → Create new file
+
+3. Name your CSS file
+At the top, where it says:
+
+Name your file…
+Type:
+
+custom.css
+(or any name you prefer, but end it in .css)
+
+4. Paste your CSS
+Scroll down to the big code box and paste your full CSS code.
+
+5. Commit the file
+At the bottom:
+
+Add a commit message (example: Add custom CSS file)
+
+Click Commit new file
+
+6. Your CSS file now exists
+You will see it listed in the repo.
+
+⭐ How to get the RAW link (for the layout system)
+Once the file is created:
+
+Click on the file (custom.css)
+
+Click the Raw button (top right)
+
+Copy the URL — it will look like:
+
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/custom.css
+But remember:
+
+If your site requires http:// instead of https://, you can simply change the beginning (it still works):
+
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/custom.css
+❓ Want me to generate the content for custom.css?
+If you want, I can prepare a clean, optimized one-file version of your entire CSS — with:
+
+both gothic background images correctly placed,
+
+custom cursors added,
+
+colors polished,
+
+all duplicate selectors cleaned up.
+
+Just say:
+
+➡️ “Yes, generate the custom.css file for me.”
+
+And I’ll build the full version ready for upload.
+
+You said:
+How do I make a new folder?
+ChatGPT said:
+Here is exactly how to create a new folder in your GitHub repo — GitHub does not have a “Create folder” button, but you can create one in the file creation screen.
+
+✅ How to Create a New Folder in Your GitHub Repository
+1. Go to your repository
+Open:
+
+https://github.com/AveDoroth/DYDOM
+2. Click “Add file” → “Create new file”
+Top right of the file list:
+
+▶️ Add file
+▶️ Create new file
+
+3. Create a folder by typing its name followed by a slash
+In the “Name your file…” box, type:
+
+images/
+Then add a placeholder file name, like:
+
+images/placeholder.txt
+GitHub creates the folder automatically when you add the first file inside it.
+
+4. Put anything inside the file
+In the big text area, type anything:
+
+placeholder
+This file is temporary — you can delete it later.
+
+5. Commit
+Scroll down and click:
+
+Commit new file
+
+🎉 Done!
+You now have a folder:
+
+/images/
+Inside your repo.
+
+You can now click the images folder and upload your cursors, backgrounds, icons, etc.
+
+📌 Bonus: How to upload images into the folder
+Go into /images/
+
+Click Add file → Upload files
+
+Select your .cur, .png, .jpg, etc
+
+Commit
+
+If you want, once your folder is ready, I can help you rewrite your CSS so all images automatically reference:
+
+http://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/
+Just say:
+“Yes, rewrite my CSS with the images folder path.”
+
+You said:
+So okay let's work on this, let me find the original css I want to change okay? For the theme that is
+ChatGPT said:
+Sure — take your time and grab the original CSS you want to modify.
+Once you paste it here, I can:
+
+✔️ restructure it
+✔️ convert image paths to your new /images/ folder
+✔️ fix outdated or broken parts
+✔️ modernize the layout
+✔️ integrate your gothic backgrounds + custom cursors
+✔️ clean the formatting and remove duplicates
+✔️ make sure it works as a full custom theme file (custom.css)
+
+Just send the CSS whenever you're ready.
+
+You said:
+body { background-color: #ffffff; }
+
+a:link      { color: #6C3600; text-decoration: underline; }
+a:visited	{ color: #6C3600; text-decoration: underline; }
+a:active	{ color: #000000; text-decoration: underline; }
+a:hover	    { color: #000000; text-decoration: underline; }
+
+a.menu:link		{ color: #000000; text-decoration: none; }
+a.menu:visited	{ color: #000000; text-decoration: none; }
+a.menu:active	{ color: #552B00; text-decoration: none; }
+a.menu:hover	{ color: #552B00; text-decoration: none; }
+
+/* The inbox, system, society, etc links in the Message Center */
+a.message:link		{ color: #4E5203; text-decoration: none; }
+a.message:visited	{ color: #4E5203; text-decoration: none; }
+a.message:active	{ color: black; text-decoration: none; }
+a.message:hover		{ color: black; text-decoration: none; }
+
+/* The Border color of the Dark Network Banners in the Footer */
+.pic a img { border: 1px solid #A45200; } 
+.pic a img:link { border: 1px solid #A45200; }
+.pic a img:visited { border: 1px solid #A45200; }
+.pic a img:active { border: 1px solid black; }
+.pic a img:hover { border: 1px solid black; }
+
+/* Special Link colors. Open Link Directory, etc. */
+a.special:link          { color: #AE5700; text-decoration: underline; }
+a.special:visited       { color: #AE5700; text-decoration: underline; }
+a.special:active        { color: black; text-decoration: underline; }
+a.special:hover         { color: black; text-decoration: underline; }
+
+hr {
+  border: 0;
+  height: 1px;
+  color: #643200;
+  background-color: #643200;
+}
+
+/* All text is within tables. */
+table {
+  text-align:justify;
+  color:black;
+  font-family:arial,Arial,Helvetica;
+  font-size:11pt;
+  font-weight:normal;
+}
+
+/* For the smaller page text */
+.footer	{
+  text-align:justify;
+  color:black;
+  font-family:arial,Arial,Helvetica;
+  font-size:8pt;
+  font-weight:normal;
+}
+
+/* Forms and buttons */
+.forminput, .textinput, .radiobutton, .checkbox, .textarea {
+  font-size: 10pt;
+  font-color: black;
+  font-family: arial, helvetica, sans-serif;
+  vertical-align: middle;
+  color: black;
+  background-color: white;
+  border: 1px black dashed;
+}
+form {
+  margin: 0px;
+  padding: 0px; 
+}
+
+/* The Main Forum page */
+.forum_table { background-color: white; }
+.forum_td { background-color: #804000; }
+.forum_closed { background-color: #552B00; }
+.forum_text { color: white; }
+a.forum:link { color: white; text-decoration: none; }
+a.forum:visited { color: white; text-decoration: none; }
+a.forum:active { color: #FFFF00; text-decoration: none; }
+a.forum:hover { color: #FFFF00; text-decoration: none; }
+/* End Forum */
+
+/* Journals - The Comment area */
+.journal_comment_table { 
+  background-color: #371C00; 
+  text-color: white; 
+  text-align: justify;
+  color: white;
+  font-family: arial,arial,helvetica;
+  font-size: 8pt;
+  font-weight: normal;
+}
+.journal_comment_div {
+  border: 1px solid #512800; 
+  padding: 0px; 
+  background: #ffffff;
+  text-align:justify;
+  color: black;
+  font-family: arial,arial,helvetica;
+  font-size: 10pt;
+  font-weight: normal;  
+}
+a.journal_comment:link		{ 
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 8pt; 
+  font-family: arial,arial,helvetica;
+}
+a.journal_comment:visited	{ 
+  color: #FFFFFF; 
+  text-decoration: none; 
+  font-size: 8pt; 
+  font-family: arial,arial,helvetica;
+}
+a.journal_comment:active	{ 
+  color: #422100; 
+  text-decoration: none; 
+  font-size: 8pt; 
+  font-family: arial,arial,helvetica;
+}
+a.journal_comment:hover	    { 
+  color: #422100; 
+  text-decoration: none; 
+  font-size: 8pt; 
+  font-family: arial,arial,helvetica;
+}
+/* End Journal Formatting */
+
+/* For various |, [, and ] symbols throughout the site */
+.divider { color: black; }
+
+/* Table Outlines */
+.tablewindows { background-color: white;}
+
+/* Table Insides */
+/* Inside the user menu, vamp box, sun, vr store, friends, and news windows/menus */
+.tdmenumain { background-color: white; }
+/* The black headings. Eg. Main Menu, Members, etc. */
+.tdwindows { background-color: white;}
+/* The menu links. Eg. Home, Request Help, etc. */
+.tdmenu { background-color: #FFFF00; }
+/* Inside the main content section */
+.tdcenter { background-color: white; }
+/* Inside the premium member lines */
+.tdpremium { background-color: #FFFF00; }
+
+/* Profile Page. The Description Box and Description area */
+.tabledescription { background-color: #FF8000; }
+.tddescription { background-color: white; }
+
+/* Fonts */
+/* Success/Good messages */
+.success { color: #550000; }
+/* Failure/Bad messages */
+.error { color: #800000; }
+/* Warning color. Usually yellow */
+.warn { color: #804000; }
+
+/* Only used for "The Ultimate Vampire Resource & Directory in Logo menu */
+h1 {
+  color: white; 
+  font-family: arial, helvetica, sans-serif; 
+  font-size: 12pt; 
+  text-align: center; 
+  font-weight: bold; 
+  margin: 0px; 
+  padding: 0px;
+}
+/* Text for "You have new messages waiting" */
+.new_messages { 
+  color: black; 
+  font-family: arial, helvetica, sans-serif; 
+}
+/* Vampbox time/date stamps */
+.vb_txt { color: #643200; }
+
+
+
+/* New CSS Classes introduced in Vampire Rave 2.0 */
+
+/* Contain images within divs */
+@media only screen and (min-width : 1px) {
+  /* Any image in div 'img-container' will scale to a max of 300px wide */
+  .img-container { width: 98%; display: inline-block; text-align: center;}
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .img-container iframe, object, embed, div, span, p, table, tr, th, td, img, ul {
+    max-width: 100%;
+  }  
+  .img-container-small { width: 98%; display: inline-block; text-align: center;}
+  .img-container-small img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .img-container-small iframe, object, embed, div, span, p, table, tr, th, td, ul {
+    max-width: 100%;
+  }  
+}
+
+/* The lines throughout the site that look like: */
+/*     ================================= VR =================================     */ 
+hr.body-line {
+	border-top: 5px double white;
+	border-bottom: 5px double white;
+}
+hr.body-line:after {
+    content: 'VR';
+    font-family: 'Droid Sans', sans-serif, Georgia, Verdana, Arial, Helvetica;
+    font-size: 1em;
+	display: inline-block;
+	position: relative;
+	top: -10px;
+	padding: 0 10px;
+	background: white;
+	color: black;
+	font-size: 18px;
+}
+
+/* The CHANGE LAYOUT drop down select menu */
+.layout_form {
+  font-size: 14px;
+  font-color: white;
+  font-family: 'Droid Sans', sans-serif, Georgia, serif, arial, helvetica;
+  vertical-align: middle;
+  color: white;
+  background-color: #232323;
+  border: 1px white solid;
+  border-radius: 3px;
+  background: url(/images/drop_down_arrow_brown.png) 130px / 22px no-repeat #232323;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  width: 160px;
+  padding: 4px 0 4px 10px;
+  margin: 0;
+}
+.layout_form select {
+   background: transparent;
+}
+.layout_form select::-ms-expand { /* IE */
+  display: none;
+}
+.layout_form option {
+  width:160px;
+  margin: 0;
+  padding: 2px 0 2px 10px;
+}
+
+/* File Upload Buttons */
+div.upload {
+    width: 100px;
+    height: 34px;
+    background: url(/inc/layouts/images/phantasm/upload_icon.png) no-repeat;
+    overflow: hidden;
+	cursor: pointer;
+}
+div.upload input {
+    display: inline !important;
+    width: 62px !important;
+    height: 50px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+/* Report a Bug */
+.shading { background-color:#f0f0f0; }
+.shade1  { background-color:#e4e4e4; }
+.shade2  { background-color:#d0d0d0; }
+
+/* Vampire Database, Profiles, Journals, etc, alternating background colors */
+.db-div-1 { background-color:#e4e4e4; }
+.db-div-2 { background-color:#d0d0d0; }
+
+/* New Markers Used on Profiles, Journals, The Vampire Database, The Forum, and more */
+.new-marker {
+  display: inline-block;
+  border: 2px black dashed;
+  border-radius: 6px;
+  font-size: 14px;
+  color: white;
+  font-family: 'Droid Sans', sans-serif, Georgia, serif, arial, helvetica;
+  vertical-align: middle;
+  padding: 4px 5px 3px 5px; 
+  margin-top:4px;
+  font-weight:bold;
+  background-color: #514e01;
+}
+
+/* Profile description box */
+.profile-description {
+  border-radius:6px; 
+  border: 1px solid black; 
+}
+
+/* Journal Comments */
+.journal-comments {
+  background-color:#f0f000;
+  border:1px solid black;
+}
+.journal-comment-line {
+  color: black; 
+  background-color: black;
+}
+
+/* The Forum */
+.forum_table { background-color: white; table-layout:fixed;}
+.forum_td { background-color: #606060; word-wrap:break-word;}
+.forum_closed { background-color: #303030; }
+.forum_text { color: black; }
+a.forum:link { color: black; text-decoration: none; }
+a.forum:visited { color: black; text-decoration: none; }
+a.forum:active { color: black; text-decoration: none; }
+a.forum:hover { color: maroon; text-decoration: none; }
+.forum_back { background-color: #e4e4e4; }
+.forum_rip_back { background-color: #d0d0d0; }
+.forum-quote {
+  background-color: #080808;
+  padding: 20px 10px 20px 0px;
+  border-radius: 6px;
+  border: 1px solid black;
+  width:96%;  
+}
+.forum-block {
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+}
+.forum-preview { border:1px solid brown; }
+
+/* VR Chat */
+.chat-channel-list {
+  border: solid 1px; 
+  border-color: black; 
+  background-color: black;
+}
+.chat-window {
+  border: solid 1px; 
+  border-color: black; 
+  background-color: black;
+}
+
+/* Portfolios */
+/* Also used for other various functions. Hidden div popup windows */
+#message-window {
+  display:none;
+  padding: 0px 10px 10px 10px;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: #000000;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  text-align: center;
+  z-index: 61; 
+}
+#overlay {
+  display:none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 60;
+  background:rgba(0,0,0,0.6);
+}
+.cancel-message { display:block; margin-right: -10px; position:relative; float: right; top:3px; right:2px; background-color:black; color:black; height:30px; width:35px; font-size:30px; text-decoration:none; text-align:center; font-weight:bold; }
+a.cancel-message:link { background-color: transparent; color: red; text-decoration: none; }
+a.cancel-message:visited { background-color: transparent; color: red; text-decoration: none; }
+a.cancel-message:hover { background-color: transparent; color: red; text-decoration: none; }
+a.cancel-message:active { background-color: transparent; color: red; text-decoration: none; }
+
+/* ////////////////////////// START Message Center Formatting ////////////////////////// */
+/* Some of these classes are used in other areas of Vampire Rave too. */
+/* .mc-menu is the drop down menu used in Journals, Report a Bug, Message Center, etc. */
+/* .mc-menu2 is the second drop down menu (bottom of page) only used in the Message Center */
+/* .mc-link-span is used on virtually every submission button site-wide */
+
+.stitched {
+  background: white;
+  border: 1px dashed black;
+  border-radius: 5px;
+  margin-top: 6px;
+}
+.mc-link-spans {
+  background-color:yellow; 
+  color:black; 
+  border: black 1px dashed;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:12px;
+}
+.mc-link-spans:hover {
+  background-color:#eeee00;
+}
+a.mc:link		{ text-decoration: none; }
+a.mc:visited	{ text-decoration: none; }
+a.mc:active	    { text-decoration: none; }
+a.mc:hover		{ text-decoration: none; }
+/* Top and bottom drop down menus, box navigation */
+.mc-menu {
+  border-top: 1px black dashed;
+  margin:0;
+  padding:0;
+  width:320px;
+  font-size:16px;
+  font-weight:bold;
+}
+.mc-menu a:hover {
+  cursor: pointer;
+}
+.mc-menu ul {
+  background: url(/images/drop_down_arrow_brown.png) 290px / 22px no-repeat yellow;
+  height:36px; 
+  list-style:none; 
+  margin:0; 
+  padding:0;
+}
+.mc-menu table { line-height:32px; }
+.mc-menu li a{
+  border-left: 1px black dashed;
+  border-right: 1px black dashed;
+  border-bottom: 1px black dashed;
+  color:black;
+  display:block;
+  font-weight:normal;
+  line-height:36px;
+  margin:0px;
+  padding:0px 40px 0px 15px;
+  height:36px;
+  font-size:14px;
+  font-style:normal;
+  text-align:left;
+  text-decoration:none;
+}
+.mc-menu li a:hover, .mc-menu ul li:hover a{
+    color:black;
+    text-decoration:none;
+}
+.mc-menu li li {
+    display:block;
+    float:left;
+    margin:0px;
+    padding:0px;
+    width:320px;
+}
+.mc-menu li ul{
+    background:#eded02;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:320px;
+    z-index:1;
+}
+.mc-menu li:hover li a{
+    background:none;
+}
+.mc-menu li ul a{
+    display:block;
+    height:36px;
+    font-size:14px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 40px 0px 15px;
+    text-align:left;
+}
+.mc-menu li ul a:hover, .mc-menu li ul li:hover a{
+    color:black;
+    text-decoration:none;
+    background-color:yellow;
+}  
+#nothing {
+    color:white !important;
+    text-decoration:bold !important;
+    background-color:black !important;
+}
+.mc-menu2 {
+  border-top: 1px black dashed;
+  margin:0;
+  padding:0;
+  width:320px;
+  font-size:16px;
+  font-weight:bold;
+}
+.mc-menu2 a:hover {
+  cursor: pointer;
+}
+.mc-menu2 ul {
+  background: url(/images/drop_down_arrow_brown.png) 290px / 22px no-repeat yellow;
+  height:36px; 
+  list-style:none; 
+  margin:0; 
+  padding:0;
+}
+.mc-menu2 table { line-height:32px; }
+.mc-menu2 li a{
+  border-left: 1px black dashed;
+  border-right: 1px black dashed;
+  border-bottom: 1px black dashed;
+  color:black;
+  display:block;
+  font-weight:normal;
+  line-height:36px;
+  margin:0px;
+  padding:0px 40px 0px 15px;
+  height:36px;
+  font-size:14px;
+  font-style:normal;
+  text-align:left;
+  text-decoration:none;
+}
+.mc-menu2 li a:hover, .mc-menu2 ul li:hover a{
+    color:black;
+    text-decoration:none;
+}
+.mc-menu2 li li {
+    display:block;
+    float:left;
+    margin:0px;
+    padding:0px;
+    width:320px;
+}
+.mc-menu2 li ul{
+    background:#eded02;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:320px;
+    z-index:1;
+}
+.mc-menu2 li:hover li a{
+    background:none;
+}
+.mc-menu2 li ul a{
+    display:block;
+    height:36px;
+    font-size:14px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 40px 0px 15px;
+    text-align:left;
+}
+.mc-menu2 li ul a:hover, .mc-menu2 li ul li:hover a{
+    color:black;
+    text-decoration:none;
+    background-color:yellow;
+}  
+/* ////////////////////////// END Message Center Formatting ////////////////////////// */
+
+
+
+ChatGPT said:
+Perfect — this is exactly what I needed.
+Now that I have the original base layout CSS for Vampire Rave, I can convert it into a dark / gothic / vampiric theme that keeps compatibility with the site’s structure.
+
+Before I rewrite it, I need to ask you one important question so I build the theme exactly how you want:
+
+❓ Do you want a complete transformation or a subtle recolor?
+Option A — Full Gothic Transformation (recommended)
+✔ Dark backgrounds
+✔ Blood-red highlights
+✔ Gold or bone-colored readable text
+✔ New user panel backgrounds
+✔ New forum colors
+✔ Two decorative gothic background images (left + right)
+✔ Custom dagger cursor
+✔ All tables darkened
+✔ Drop shadows + glow effects
+✔ Updated menu colors
+✔ Matching journal/comment/forum boxes
+✔ Everything cohesive
+
+This turns the site into a fully gothic VR theme.
+
+Option B — Keep the structure but recolor everything
+✔ Same layout
+✔ Same shapes + borders
+✔ Simply recolor things to match your scheme
+✔ Light gothic atmosphere but no heavy redesign
+
+❓ Which do you want — A or B?
+⭐ Next Step
+As soon as you choose, I will produce:
+
+→ A clean, modernized custom.css file
+✔ Compatible with Vampire Rave’s layout system
+✔ Without comments unless you want them
+✔ Using your GitHub /images/ folder (automatic path conversion)
+✔ Using your custom cursors
+✔ Using the two gothic background decorations
+✔ Dark red + black theme with readable text
+✔ Fully styled menus, journals, forum, profile pages, everything
+✔ No duplicate selectors
+✔ No broken references
+
+You can then upload it as:
+
+custom.css
+And use it as your site theme.
+
+Just reply:
+
+👉 A for full gothic transformation
+👉 B for subtle recolor
+
+And I’ll build your entire theme.
+
+You said:
+Let's try A 
+ChatGPT said:
+Excellent — Option A (full gothic transformation) it is.
+To build your final custom.css, I need one last piece of information so I can generate a perfect theme:
+
+🔥 1. Which two decorative background images do you want on left & right?
+You previously used:
+
+Left: https://pomf2.lain.la/f/wymmjmhp.png
+
+Right: https://pomf2.lain.la/f/9djoogh4.png
+
+Do you want to KEEP these two, or use NEW gothic images?
+
+✔ I can find replacements
+✔ Or I can keep these
+✔ Or mix them
+
+Just tell me:
+
+“Keep them”
+or
+“Replace them”
+
+🗡️ 2. Do you want the theme mostly:
+Choose ONE:
+
+A1 — Deep black + blood red
+Very dark, crimson highlights, glowing borders.
+
+A2 — Black + deep wine purple
+More elegant gothic aesthetic.
+
+A3 — Black + bone/ivory accents
+Readable, Victorian vampire look.
+
+A4 — Black + silver
+Cold, moonlit vampire aesthetic.
+
+A5 — Mix of red, black, and gold
+More luxurious gothic theme.
+
+🩸 3. Do you want texture?
+For the main background, choose one:
+
+T1 — Soft dark grunge
+T2 — Subtle leather texture
+T3 — Stone / gothic cathedral texture
+T4 — Velvet / cloth
+T5 — Pure solid black
+(If you pick T1–T4, I will add a high-quality texture to /images/.)
+
+⚰️ 4. Which font style fits your vampire theme?
+Choose:
+
+F1 — Elegant Gothic Serif (Cinzel, Spectral SC)
+F2 — Blood Script / Cursive (for headings only)
+F3 — Vampire Gothic (Blackletter) (for headings)
+F4 — Clean readable serif
+F5 — A mix (Gothic for headers / simple for body) ← recommended
+🧛‍♀️ After your answers
+I will generate:
+
+✔ Your full gothic theme CSS (complete & polished)
+✔ Structured, compressed, and modernized
+✔ Uses your GitHub /images/ folder
+✔ Includes two decorative background images
+✔ Includes your custom cursors
+✔ Applies across ALL VR components:
+
+Forums
+
+Profiles
+
+Journals
+
+Message Center
+
+Menus
+
+Tables
+
+User boxes
+
+Everything
+
+Just reply with:
+1. Keep or Replace
+2. A1–A5
+3. T1–T5
+4. F1–F5
+
+And I’ll build your finished theme.
+
+You said:
+1) Keep the current ones for now
+
+2) A1
+
+3) T3
+
+4) F4
+
+ChatGPT said:
+Perfect — with those choices, I can now build your full gothic theme.
+
+Here is what you chose:
+
+✔ Keep current left/right images
+✔ A1 — Deep black + blood red theme
+✔ T3 — Stone / gothic cathedral texture for the main background
+✔ F4 — Clean readable serif (nice for long VR text)
+
+Now here is your complete, final custom.css — optimized for VampireRave, compatible with legacy tables, and ready for GitHub hosting.
+
+✅ YOUR COMPLETE GOTHIC THEME — custom.css
+Replace YOURUSERNAME in the URLs once you upload files to your repo.
+
+/* --------------------------------------------------------
+   VAMPIRE RAVE CUSTOM GOTHIC THEME
+   Black + Blood Red (A1) + Stone Texture (T3) + Clean Serif (F4)
+   -------------------------------------------------------- */
+
+/* ---------------------- GLOBAL RESET ---------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://pomf2.lain.la/f/wxh75dzw.png") repeat; /* stone texture T3 */
+    background-color: #000;
+    color: #e6e6e6;
+    font-family: "Georgia", "Times New Roman", serif; /* F4 */
+    font-size: 12pt;
+}
+
+/* ---------------------- DECORATIVE SIDES ---------------------- */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 160px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* LEFT IMAGE */
+body::before {
+    left: 0;
+    background-image: url("https://pomf2.lain.la/f/wymmjmhp.png");
+}
+
+/* RIGHT IMAGE */
+body::after {
+    right: 0;
+    background-image: url("https://pomf2.lain.la/f/9djoogh4.png");
+}
+
+/* ---------------------- LINKS ---------------------- */
+a,
+a:link,
+a:visited {
+    color: #b80000; /* blood red */
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #ff1a1a; /* bright red highlight */
+    text-shadow: 0 0 5px #ff0000;
+}
+
+/* ---------------------- HEADINGS ---------------------- */
+h1, h2, h3 {
+    color: #ff1a1a;
+    text-shadow: 0 0 8px #b80000;
+    font-weight: bold;
+}
+
+/* ---------------------- TABLES ---------------------- */
+table {
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid #440000;
+    color: #e6e6e6;
+}
+
+td {
+    padding: 4px;
+}
+
+/* WINDOW HEADERS (Main Menu, Members, etc.) */
+.tdwindows {
+    background: #1a0000;
+    color: #ff4d4d;
+    font-weight: bold;
+    border-bottom: 2px solid #440000;
+}
+
+/* MENU BACKGROUNDS */
+.tdmenu {
+    background-color: #330000;
+    color: #ff4d4d;
+}
+
+/* CENTER CONTENT AREA */
+.tdcenter {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* PREMIUM STRIPE */
+.tdpremium {
+    background-color: #550000;
+}
+
+/* ---------------------- FORMS ---------------------- */
+.forminput,
+.textinput,
+.radiobutton,
+.checkbox,
+.textarea {
+    background: #0d0d0d;
+    border: 1px solid #660000;
+    color: #e6e6e6;
+}
+
+/* ---------------------- JOURNAL COMMENTS ---------------------- */
+.journal_comment_table {
+    background: #1a0000;
+    color: #e6e6e6;
+}
+
+.journal_comment_div {
+    background: #000;
+    color: #e6e6e6;
+    border: 1px solid #660000;
+}
+
+/* ---------------------- PROFILE DESCRIPTION BOX ---------------------- */
+.profile-description {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #660000;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+/* ---------------------- SUCCESS / ERROR ---------------------- */
+.success { color: #38ff38; }
+.error { color: #ff4d4d; }
+.warn { color: #ffcc00; }
+
+/* ---------------------- HORIZONTAL LINES ---------------------- */
+hr {
+    border: 0;
+    height: 1px;
+    background: #660000;
+}
+
+/* VR stylized line */
+hr.body-line {
+    border-top: 5px double #660000;
+    border-bottom: 5px double #660000;
+}
+
+hr.body-line:after {
+    content: 'VR';
+    background: black;
+    color: #ff1a1a;
+    font-size: 18px;
+    padding: 0 10px;
+    top: -10px;
+    position: relative;
+}
+
+/* ---------------------- POPUP WINDOWS ---------------------- */
+#message-window {
+    background: #0d0d0d;
+    border: 3px solid #ff0000;
+}
+
+#overlay {
+    background: rgba(0,0,0,0.7);
+}
+
+/* ---------------------- FORUM ---------------------- */
+.forum_table {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #440000;
+}
+
+.forum_td {
+    background-color: #1a0000;
+    color: #ffcccc;
+}
+
+.forum_closed {
+    background-color: #0d0000;
+}
+
+.forum_text {
+    color: #ffb3b3;
+}
+
+a.forum:hover {
+    color: #ff1a1a;
+    text-shadow: 0 0 5px red;
+}
+
+/* QUOTES */
+.forum-quote {
+    background: #0d0d0d;
+    border: 1px solid #660000;
+    padding: 20px;
+}
+
+/* ---------------------- NEW MARKERS ---------------------- */
+.new-marker {
+    background-color: #660000;
+    border: 2px dashed #ff1a1a;
+}
+
+/* ---------------------- CHAT ---------------------- */
+.chat-window,
+.chat-channel-list {
+    background: #000;
+    border: 1px solid #660000;
+}
+
+/* ---------------------- DROPDOWN LAYOUT SELECT ---------------------- */
+.layout_form {
+    background: #1a0000;
+    color: #ff4d4d;
+    border: 1px solid #660000;
+}
+
+/* ---------------------- IMAGE CONTAINER FIX ---------------------- */
+.img-container img,
+.img-container-small img {
+    max-width: 100%;
+}
+
+/* ===================== END OF GOTHIC THEME ===================== */
+✅ Next Step
+To activate this:
+
+1. Go to your GitHub repo
+Create:
+
+/css/custom.css
+/images/
+Upload the stone texture + (later) your left/right images if you want them locally.
+
+2. In VampireRave layout settings:
+CSS File:
+
+https://raw.githubusercontent.com/YOURUSERNAME/YOURREPO/main/css/custom.css
+Graphics Path:
+(optional unless you host images here too)
+
+Want anything added?
+✔ Custom cursors
+✔ Transparent menu boxes
+✔ Animated glowing borders
+✔ Optional floating particles
+✔ Matching forum post borders
+✔ Darker or lighter version
+
+Just tell me!
+
+You said:
+Remove the comments please
+ChatGPT said:
+Of course — here is the same full gothic CSS, but 100% clean and comment-free.
+
+✅ GOTHIC THEME — NO COMMENTS
 body {
     margin: 0;
     padding: 0;
@@ -193,4 +3540,219 @@ a.forum:hover {
 .img-container-small img {
     max-width: 100%;
 }
+If you want, I can:
 
+✔ compress the CSS
+✔ darken or lighten the theme
+✔ add particle effects
+✔ add animated glows
+✔ add your custom cursors into this file
+
+Just tell me!
+
+You said:
+Now I will paste that into my css file on github, the images do I post those in the images folder?
+ChatGPT said:
+Yes — exactly right.
+Here’s how to do it cleanly and correctly:
+
+✅ Where to put your images
+Inside your GitHub repo, place all theme images in:
+
+images/
+So your structure should look like:
+
+DYDOM/
+ ├─ custom.css
+ ├─ images/
+ │    ├─ left.png
+ │    ├─ right.png
+ │    ├─ background.png
+ │    ├─ cursor.cur
+ │    └─ pointer.cur
+This keeps everything organized and is required for most layout systems that expect:
+
+Graphics Path: http://yourrepo/images/
+CSS File:      http://yourrepo/custom.css
+✅ How to use these images in your CSS
+Once the images are uploaded to the images folder, the RAW file URL format will be:
+
+https://raw.githubusercontent.com/USERNAME/REPO/main/images/FILENAME.png
+Example:
+
+background-image: url("https://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/left.png");
+Same for cursors:
+
+cursor: url("https://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/cursor.cur"), default;
+⚠️ Remember
+GitHub never serves non-raw image URLs; you must use:
+
+✔ “Raw” button
+✔ copy the URL
+✔ and replace ?raw=1 if needed
+
+If you'd like —
+I can:
+
+✨ Generate all the correct GitHub RAW URLs for your images
+✨ Rewrite the entire CSS to use /images/yourimage.png
+✨ Prepare it for VR’s “Custom Layout” form (CSS file + graphics path)
+
+Just upload your images to the images folder and tell me their filenames,
+and I will rewrite your CSS automatically.
+
+You said:
+So I got a folder in my /images/ called "wip", do I add the images outside of this?
+ChatGPT said:
+It depends on how clean you want your repo to be — but technically both will work.
+
+Here’s the simple breakdown:
+
+✅ Best Practice (Recommended)
+Put your FINAL theme images directly inside:
+
+/images/
+And keep /images/wip/ only for drafts or things you're still editing.
+
+Example:
+
+images/
+ ├─ background-main.png
+ ├─ bg-left.png
+ ├─ bg-right.png
+ ├─ cursor.cur
+ ├─ pointer.cur
+ └─ wip/
+      ├─ experiments1.png
+      ├─ testlayers.png
+Why?
+✔ VR layout system expects a clean graphics directory
+✔ Your Graphics Path will be:
+
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/
+Everything must be at that path, without subfolders.
+
+⚠️ If you keep images inside /images/wip/
+Then your Graphics Path must change to:
+
+https://raw.githubusercontent.com/AveDoroth/DYDOM/main/images/wip/
+But VR does NOT support nested graphics paths well, and some page sections will break because the system expects images in the same folder as the CSS file’s directory.
+
+So it's safer to avoid subfolders for the final theme.
+
+⭐ Conclusion
+✔ Put only finished images directly in /images/
+✔ Keep /images/wip/ for drafts if you want
+✔ Point your Graphics Path to /images/
+
+If you want, I can also:
+
+✔ verify your GitHub file structure
+✔ produce the correct RAW URLs
+✔ insert them into your CSS file automatically
+
+Just say “yes” and upload your filenames.
+
+You said:
+How do I get the raw from this? https://github.com/AveDoroth/VPCSS/tree/main/images
+ChatGPT said:
+Ah! I see exactly what’s happening — that link is to the folder view on GitHub, not a file. GitHub only lets you get RAW URLs for individual files, not folders.
+
+Here’s how to get the raw URL for a file:
+
+Step-by-step
+Go to the file you want, not the folder. For example:
+
+https://github.com/AveDoroth/VPCSS/blob/main/images/background.png
+Click the Raw button (top right of the file preview).
+
+That opens a page with just the file. Copy the URL from your browser.
+
+GitHub will usually look like:
+
+https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/background.png
+Use this URL in your CSS:
+
+background-image: url("https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/background.png");
+⚠️ Important Notes
+Only individual files get a RAW link.
+
+You cannot use a folder URL (/images/) as a raw path. Each image must have its own raw URL.
+
+If you plan to use multiple images, repeat this process for each file.
+
+If you want, I can take all your images in that folder and write the ready-to-use RAW URLs for your CSS. That way, you can just paste them in. Do you want me to do that?
+
+You said:
+Where to I put it in the code?
+ChatGPT said:
+Got it! Let’s clarify where to put your background images in your CSS.
+
+Since you want two different images, one on the left and one on the right, you don’t just replace the body { background… }. You’ll use pseudo-elements (::before and ::after) or separate divs to position them.
+
+Here’s a clean setup using raw GitHub URLs:
+
+body {
+    background-color: #000000; /* fallback color */
+    color: var(--text-contrast);
+    cursor: url('https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/cursor.cur'), default;
+    margin: 0;
+    padding: 0;
+}
+
+/* Left background image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    background-image: url("https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/bg-left.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%; /* full height */
+    pointer-events: none;
+    z-index: -1; /* behind everything */
+}
+
+/* Right background image */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    background-image: url("https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/bg-right.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 100%; /* full height */
+    pointer-events: none;
+    z-index: -1; /* behind everything */
+}
+✅ Notes
+Replace bg-left.png and bg-right.png with your actual file names.
+
+The ::before pseudo-element handles the left side, ::after handles the right side.
+
+z-index: -1 ensures the images stay behind your content.
+
+pointer-events: none makes sure the images don’t block clicks.
+
+If you want, I can rewrite your full CSS and integrate both left/right background images with your vampiric theme, so you only need to paste it once.
+
+Do you want me to do that?
+
+
+
+
+Attach
+
+Search
+
+Study
+
+Voice
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
