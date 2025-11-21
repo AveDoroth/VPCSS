@@ -1,149 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-
-:root {
-    --accent-red: #8b3a3a;
-    --accent-red-dark: #240000;
-    --text-contrast: #d7c39a;
-    --bg-main: #000000;
-    --bg-panel: rgba(20, 20, 20, 0.9);
-    --bg-panel-dark: rgba(10, 10, 10, 0.9);
-    --border-soft: rgba(139, 58, 58, 0.3);
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-main);
-    color: var(--text-contrast);
-    cursor: url('https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/Dagger%20%26%20Dark%20Rose%20Halloween--cursor--SweezyCursors..cur'), default;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100%;
-    background: url('https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/440-4401318_logovampire20ankh-ankh-png-vampire-the-masquerade-symbol.png') no-repeat left center;
-    background-size: contain;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: 100%;
-    background: url('https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/skulls-32856_1280.png') no-repeat right center;
-    background-size: contain;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #1a1a1a;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--accent-red-dark);
-    border: 2px solid #000;
-    border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-red);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--accent-red);
-    font-family: "Cinzel Decorative", serif !important;
-    letter-spacing: 1px;
-}
-
-p, span, div, td, th {
+body { 
+    background-color: var(--bg-main); 
     color: var(--text-contrast);
 }
 
-a {
-    color: var(--accent-red-dark);
-    position: relative;
-    text-decoration: none;
-    cursor: url('https://raw.githubusercontent.com/AveDoroth/VPCSS/main/images/Dagger%20%26%20Dark%20Rose%20Halloween--pointer--SweezyCursors..cur'), pointer;
+a:link, a:visited { 
+    color: var(--accent-red-dark); 
+    text-decoration: underline; 
+}
+a:active, a:hover { 
+    color: var(--text-contrast); 
+    text-decoration: underline; 
 }
 
-a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: var(--accent-red);
-    transition: width 0.3s ease;
+a.menu:link, a.menu:visited { 
+    color: var(--text-contrast); 
+    text-decoration: none; 
+}
+a.menu:active, a.menu:hover { 
+    color: var(--accent-red); 
+    text-decoration: none; 
 }
 
-a:hover {
+a.message:link, a.message:visited { 
+    color: var(--accent-red-dark); 
+    text-decoration: none; 
+}
+a.message:active, a.message:hover { 
+    color: var(--accent-red); 
+    text-decoration: none; 
+}
+
+.pic a img { border: 1px solid var(--accent-red-dark); } 
+.pic a img:active, .pic a img:hover { border: 1px solid var(--accent-red); }
+
+a.special:link, a.special:visited { 
+    color: var(--accent-red-dark); 
+    text-decoration: underline; 
+}
+a.special:active, a.special:hover { 
+    color: var(--text-contrast); 
+    text-decoration: underline; 
+}
+
+hr { 
+    background-color: var(--accent-red-dark); 
+    color: var(--accent-red-dark); 
+}
+
+table, .textarea, .footer {
     color: var(--text-contrast);
-}
-
-a:hover::after {
-    width: 100%;
-}
-
-#userpage, .userpage-wall, .srd {
-    position: relative;
-    background: var(--bg-panel);
-    border: 1px solid var(--border-soft);
-    border-radius: 6px;
-    box-shadow: inset 0 0 10px rgba(50, 50, 50, 0.5);
-}
-
-.d-mob-none.jumbotron-guild.jumbotron-fluid.jumbotron {
-    background: #1f1f1f !important;
-}
-
-button, .btn, img, video, audio, .w-50.form-control {
-    border: none;
-    border-radius: 3px;
-    filter: drop-shadow(0 0 0.2rem rgba(139, 58, 58, 0.6));
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-button:hover, .btn:hover, img:hover, video:hover, audio:hover, .w-50.form-control:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 10px rgba(139, 58, 58, 0.5);
+    font-family: Verdana, Arial, Helvetica;
 }
 
 .forminput, .textinput, .radiobutton, .checkbox {
-    background: #000;
+    background-color: var(--bg-main);
     color: var(--text-contrast);
     border: 2px solid var(--accent-red);
     font-family: Verdana, Arial, Helvetica;
 }
 
-hr {
-    border: none;
-    height: 1px;
-    margin: 10px 0;
-    background: linear-gradient(to right, transparent, rgba(139, 58, 58, 0.5), transparent);
-}
+.forum_table { background-color: var(--bg-main); }
+.forum_td { background-color: var(--accent-red-dark); }
+.forum_closed { background-color: var(--accent-red-dark); }
+.forum_text { color: var(--text-contrast); }
+a.forum:link, a.forum:visited { color: var(--text-contrast); text-decoration: none; }
+a.forum:active, a.forum:hover { color: var(--accent-red); text-decoration: none; }
 
-#header--icon {
-    filter: drop-shadow(0 0 0.3rem rgba(139, 58, 58, 0.5));
-}
-
-table {
+.journal_comment_table { 
+    background-color: var(--accent-red-dark);
     color: var(--text-contrast);
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 10pt;
+}
+.journal_comment_div {
+    background: var(--bg-main);
+    border: 1px solid var(--accent-red);
+    color: var(--text-contrast);
 }
 
-.tablewindows { background: #2a0000; }
-.tdwindows    { background: #110000; }
-.tabledescription { background: var(--accent-red); }
-.tddescription     { background: #1a0000; }
+a.journal_comment:link, a.journal_comment:visited { color: var(--text-contrast); }
+a.journal_comment:active, a.journal_comment:hover { color: var(--accent-red); }
+
+.divider { color: var(--text-contrast); }
+
+.tablewindows { background-color: var(--accent-red-dark); }
+.tdmenumain, .tdwindows, .tdcenter { background-color: var(--bg-main); }
+.tdmenu, .tdpremium { background-color: var(--accent-red-dark); }
+
+.tabledescription { background-color: var(--accent-red); }
+.tddescription { background-color: var(--accent-red-dark); }
+
+.success { color: lime; }
+.error   { color: var(--accent-red); }
+.warn    { color: yellow; }
+
+h1, .new_messages, .vb_txt { color: var(--accent-red); }
